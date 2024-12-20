@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'raleway';
+  src: url('./raleway-medium-webfont.woff2') format('woff2'),
+    url('./raleway-medium-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'shadows-into-light';
+  src: url('./ShadowsIntoLight-Regular.ttf') format('woff2');
+  font-weight: 650;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'shadows-into-light';
+  background-color: black;
+  border-bottom: 2px solid rgb(193, 251, 248);;
+  box-shadow: 0px 10px 10px -10px rgb(193, 251, 248);
+  letter-spacing: 5px;
+  --main-bg: rgb(198, 47, 30);
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1, h3, p {
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin: 10px 10px;
+}
+
+/* HOME.JS */
+
+button {
+  padding: 7px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'shadows-into-light';
+  background-color: var(--main-bg);
+  color: white;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+.imageContainer {
+  height:90vh; 
+  background-image: url(../bg-image3.jpg);
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+/* MENU.JS */
+
+.contactContainer {
+  padding: 10px;
+  font-family: 'shadows-into-light';
+  color: white;
+  background-image: url(/ramen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 87vh;
+  background-position: 150px 50px
+}
+
+.employeeDetails {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.employeeDetailsBox {
+  border: 2px solid var(--main-bg);
+  border-radius: 10px;
+}
+
+.employeeDetailsBox h3 {
+  text-decoration: underline;
+}
+
